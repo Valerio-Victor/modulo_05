@@ -8,7 +8,15 @@ fig:figura7
 fig:figura8
 fig:figura9
 fig:figura10
+fig:figura11
+fig:figura12
+fig:figura13
+fig:figura14
+fig:figura15
+fig:figura16
 tab:tabela1
+fig:figura17
+fig:figura18
 hidrogênio-na-transição-energética-sustentável
 o-que-é-a-perspectiva-do-ciclo-de-vida
 quais-as-etapas-de-uma-acv
@@ -19,7 +27,7 @@ etapa-4---interpretação
 o-que-é-a-intensidade-de-carbono
 secao5
 aplicação-genérica-na-produção-e-uso-de-biocombustível
+aplicação-em-sistemas-de-produção-de-hidrogênio
 secao6
 outras-categorias-de-impacto-além-do-carbono
 certificações-de-hidrogênio
-figuras

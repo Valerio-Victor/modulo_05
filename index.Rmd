@@ -13,7 +13,7 @@ github-repo: rstudio/bookdown-demo
 
 # HIDROGÊNIO NA TRANSIÇÃO ENERGÉTICA SUSTENTÁVEL
 
-Conforme já mencionado, o hidrogênio, na forma molecular (H2), é apontado como uma alternativa estratégica na transição energética, ocupando posição de destaque como “vetor energético”. De maneira geral, entende-se “transição energética” como a movimentação dos setores econômicos, governos e sociedade em geral, em promover a produção e uso de energia a partir de fontes mais independentes de recursos não-renováveis e baixa emissão de gases de efeito estufa. Certamente, numa perspectiva de sustentabilidade, outros aspectos ambientais, além da emissão de carbono, e aspectos sociais devem ser contabilizados nesta transição.
+Conforme já mencionado, o hidrogênio, na forma molecular (H~2~), é apontado como uma alternativa estratégica na transição energética, ocupando posição de destaque como “vetor energético”. De maneira geral, entende-se “transição energética” como a movimentação dos setores econômicos, governos e sociedade em geral, em promover a produção e uso de energia a partir de fontes mais independentes de recursos não-renováveis e baixa emissão de gases de efeito estufa. Certamente, numa perspectiva de sustentabilidade, outros aspectos ambientais, além da emissão de carbono, e aspectos sociais devem ser contabilizados nesta transição.
 
 A primeira tentativa de rotular o hidrogênio a partir da sua origem, considerando a matéria-prima e/ou a rota tecnológica, baseou-se em diferentes cores, como pode ser visualizado na Figura \@ref(fig:figura1) seguinte. Salienta-se que existem variações tanto nos rótulos quanto nas suas respectivas descrições. 
 
@@ -25,7 +25,7 @@ knitr::include_graphics(path = 'figura_01.png')
 
 Apesar do apelo visual, percebe-se que as simplificações promovidas por tal rotulagem não permitem uma análise mais aprofundada dos aspectos ambientais (e sociais) associados à toda a cadeia de hidrogênio. Neste sentido, os recentes programas de certificação de hidrogênio, em consonância com as políticas de baixo carbono^[Políticas de Baixo Carbono (Low Carbon Policies) consistem em programas governamentais para a promoção de produção e uso de fontes de energia associadas à baixas emissões de gases de efeito estufa (GEE) em comparação com as fontes fósseis.], baseiam-se em parâmetros que vão além da origem do hidrogênio ou do processo de conversão.  
 
-A avaliação de um produto considerando toda a cadeia de suprimento (supply-chain) – isto é, incluindo os fornecedores, fabricantes , distribuidores e, eventualmente, o fim da vida útil do produto – converge para uma perspectiva de análise comumente chamada Análise do Ciclo de Vida. Esta perspectiva será abordada no item seguinte. Na figura \@ref(fig:figura1), pode-se observar alguns aspectos desta perspectiva. Veja nas colunas onde são informadas as emissões diretas de gases de efeito estufa (Direct global warming impacts), ou seja, as emissões no processo produtivo, e as emissões adicionais (Additional global warming impacts), ou seja, as emissões ao longo da cadeia de suprimento. Vale salientar que os valores reportados podem variar em função de características específicas do processo ou de aspectos metodológicos, como serão indicados a seguir. 
+A avaliação de um produto considerando toda a cadeia de suprimento (supply-chain) – isto é, incluindo os fornecedores, fabricantes , distribuidores e, eventualmente, o fim da vida útil do produto – converge para uma perspectiva de análise comumente chamada Análise do Ciclo de Vida. Esta perspectiva será abordada no item seguinte. Na Figura \@ref(fig:figura1), pode-se observar alguns aspectos desta perspectiva. Veja nas colunas onde são informadas as emissões diretas de gases de efeito estufa (Direct global warming impacts), ou seja, as emissões no processo produtivo, e as emissões adicionais (Additional global warming impacts), ou seja, as emissões ao longo da cadeia de suprimento. Vale salientar que os valores reportados podem variar em função de características específicas do processo ou de aspectos metodológicos, como serão indicados a seguir. 
 
 # O QUE É A PERSPECTIVA DO CICLO DE VIDA?
 
@@ -236,7 +236,7 @@ Alguns pontos importantes merecem destaque:
 
 A Figura \@ref(fig:figura7) apresenta os resultados totais. 
 
-```{r figura7, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap="Avaliação de impactos da produção e uso de etanol de cana-de-açúcar sem alocação."}
+```{r figura7, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.align='center', fig.cap="Avaliação de impactos da produção e uso de etanol de cana-de-açúcar sem alocação."}
 
 knitr::include_graphics(path = 'figura_07.png')
 
@@ -246,7 +246,7 @@ Ao todo, foram contabilizadas cerca de aproximadamente 20 kgCO~2e~ por GJ de eta
 
 Porém, observa-se que o sistema produtivo do etanol produz também eletricidade. Seria justo que o etanol, que não é o único produto obtido, fosse responsabilizado por todas estas emissões? Se as emissões totais fossem alocadas para o etanol em base energética, a pegada de carbono do etanol seria cerca de 15 kgCO~2e~ por GJ (vide Figura \@ref(fig:figura8)). 
 
-```{r figura8, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap="Avaliação de impactos da produção e uso de etanol de cana-de-açúcar com alocação."}
+```{r figura8, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.align='center', fig.cap="Avaliação de impactos da produção e uso de etanol de cana-de-açúcar com alocação."}
 
 knitr::include_graphics(path = 'figura_08.png')
 
@@ -256,7 +256,7 @@ Ou seja, em termos energéticos, o sistema produz ao todo 1,35 GJ, sendo 1.0 GJ 
 
 Agora, afinal, como ficaria a pegada de carbono do etanol se adotássemos a abordagem de substituição? (Vide Figura \@ref(fig:figura9)).
 
-```{r figura9, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap="Avaliação de impactos da produção e uso de etanol de cana-de-açúcar assumindo substituição do co-produtos."}
+```{r figura9, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.align='center', fig.cap="Avaliação de impactos da produção e uso de etanol de cana-de-açúcar assumindo substituição do co-produtos."}
 
 knitr::include_graphics(path = 'figura_09.png')
 
@@ -282,197 +282,160 @@ knitr::include_graphics(path = 'figura_10.png')
 
 ```
 
-# O HIDROGÊNIO NAS POLÍTICAS DE BAIXO CARBONO {#secao6}
+Por sua vez, o iLUC é uma mudança no uso ou manejo da terra que é consequência da mudança direta no uso da terra, mas que ocorre fora das fronteiras do sistema que está sendo avaliado. Diferentemente do dLUC, o iLUC não pode ser medido ou observado diretamente. Em vez disso, ele é estimado por modelos a partir dos vínculos econômicos entre diferentes setores. O aumento na demanda da biomassa, e consequentemente de área para o plantio, pode induzir um aumento no preço de commodities; e esse aumento de preço causaria combinações em respostas mediadas pelo mercado, como: troca de culturas, melhoria no rendimento, redução do consumo, etc. Essas respostas podem ocorrer tanto em nível local (ou seja, dentro do país em que a demanda por biocombustíveis aumenta) quanto em nível global (ou seja, em outros países). 
 
-# OUTRAS CATEGORIAS DE IMPACTO ALÉM DO CARBONO
+Para fins de exemplificação, vamos assumir algumas estimativas de emissões de carbono em função da mudança da terra para o cultivo de cana-de-açúcar. Considerando apenas as mudanças diretas, estima-se que cerca de 12000 kgCO~2~ seriam emitidos anualmente se um hectare floresta nativa fosse transformado em canavial, ou 400 kgCO~2~ se um hectare pastagem fosse transformado em canavial. Por sua vez, estudos como (Moreira et al., 2014) indicam que cerca de 2300 kgCO~2~ seriam emitidos por hectare se efeitos diretos e indiretos, fossem considerados simultaneamente. 
 
-# CERTIFICAÇÕES DE HIDROGÊNIO
+Do exemplo anterior, estima-se que cerca de 0,01 hectares seriam necessários para produzir 1,0 GJ de etanol. Supondo apenas emissões diretas, a pegada de carbono que era de 15 kgCO~2e~/GJ~etanol~ com alocação energética, subiria 17 kgCO~2e~/GJ~etanol~ para ocupação de pastagens ou 71 kgCO~2e~/GJ~etanol~ para ocupação de floresta nativa. Considerando também os efeitos diretos e indiretos simultaneamente, a pegada de carbono seria de 26 kgCO~2e~/GJ~etanol~. 
 
+## Aplicação em Sistemas de Produção de Hidrogênio
 
+Os principais aspectos de uma ACV, discutidos anteriormente, podem ser estendidos para a produção de hidrogênio, com ênfase na pegada de carbono deste novo combustível. 
 
+Considerando a obtenção convencional de hidrogênio, ou seja, a partir da reforma a vapor de metano (SMR – Steam Methane Reform), observa-se na Figura \@ref(fig:figura11) os principais processos envolvidos, ou seja: a extração e processamento do gás natural, o transporte do gás natural até a planta SMR (via tubulação) e o processo de conversão de hidrogênio em si. Os valores assumidos aqui foram obtidos da literatura (Spath and Mann, 2001) e da base de dados Ecoinvent v.3.6 (Ecoinvent Association, 2019). Como já explicado, os três processos apresentados e descritos associam-se a outros processos e assim por diante. Ainda, na figura abaixo, alguns fluxos elementares estão explícitos como o gás natural obtido diretamente dos poços e as emissões de processo emitidas diretamente para a natureza. Pelo fato da categoria de impacto de interesse neste exemplo ser o potencial aquecimento global (Intensidade de Carbono), as emissões apresentadas referem-se apenas à gases de efeito estufa. Nos inventários originais existem outras emissões para o solo, água e atmosfera que são classificadas em outras categorias de impacto.  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# FIGURAS
-
-Figura \@ref(fig:figura11)
-
-```{r figura11, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap=""}
+```{r figura11, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.align='center', fig.cap="Inventários associados à produção de hidrogênio (H~2~) a partir da reforma a vapor de metano."}
 
 knitr::include_graphics(path = 'figura_11.png')
 
 ```
 
-Figura \@ref(fig:figura12)
+Considerando tais processos e a unidade funcional de 1,0 kg H~2~ (200 bar, 99% de pureza), o inventário ponderado é apresentado na Figura \@ref(fig:figura12) seguinte. Atente que na figura os fluxos produto e elementares já estão caracterizados em CO~2e~. Como não são observadas, nos processos analisados, casos de multi-produção, a pegada de carbono do hidrogênio consiste na soma das emissões estimadas ao longo do ciclo de vida, ou seja, 10,5 kgCO~2e~/kgH~2~.
 
-```{r figura12, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap=""}
+Em termos de contribuição, visivelmente a etapa de conversão do hidrogênio é a mais relevante, em especial devido as emissões do processo. Um aspecto relevante a ser considerado na ACV do hidrogênio é que as condições de sua produção na “porta da fábrica” devem ser declaradas, a fim de permitir uma comparação adequada. Ou seja, a pressão de saída, bem como o grau de pureza, tem influência considerável no processo, devido a diferenças nos designs do processo e maior e menor consumo de insumos. No caso em questão, por exemplo, a compressão de hidrogênio, considerando o abastecimento pela eletricidade da rede, é responsável por o consumo estimado de 1,1% das emissões totais. Se o produto fosse considerado em 700 bar, esta contribuição aumentaria para 3,4%. 
+
+```{r figura12, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.align='center', fig.cap="Intensidade de carbono do hidrogênio (H~2~) obtido a partir da reforma a vapor de metano."}
 
 knitr::include_graphics(path = 'figura_12.png')
 
 ```
 
-Figura \@ref(fig:figura13)
+A reforma a vapor também pode ser aplicada para o etanol, visando a produção de hidrogênio (Figura \@ref(fig:figura13)). Considerando a intensidade de carbono do etanol estimada acima (13,5 gCO~2e~/MJ, vide Figura \@ref(fig:figura8)), o hidrogênio seria obtido em 2,6 kgCO~2e~/kg. O menor valor ressalta as vantagens, em termos de redução de carbono, das rotas baseadas em biomassa. Porém, tais benefícios podem ser anulados quando são contabilizadas as eventuais emissões associadas às mudanças do uso da terra. Conforme mencionado acima, se o etanol fosse obtido a partir do desmatamento de florestas nativas, a intensidade de carbono do hidrogênio subiria para 13,25 kgCO~2e~/kgH~2~. Ainda, considerando efeitos diretos e indiretos, o hidrogênio seria reportado em 4,97 kgCO~2e~/kgH~2~.
 
-```{r figura13, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap=""}
+```{r figura13, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.align='center', fig.cap="Intensidade de carbono do hidrogênio (H~2~) obtido a partir da reforma a vapor de etanol de cana-de-açúcar."}
 
 knitr::include_graphics(path = 'figura_13.png')
 
 ```
 
-Figura \@ref(fig:figura14)
+Por sua vez, assumindo a promissora tecnologia da obtenção de hidrogênio via eletrólise da água, o ciclo de vida do hidrogênio obtido de eletricidade fotovoltaica (Figura \@ref(fig:figura14)) resultaria em aproximadamente 4,9 kgCO~2e~/kgH~2~. Aqui vale ressaltar, mais uma vez, dois aspectos relevantes na condução da ACV: 
 
-```{r figura14, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap=""}
+1. a importância da fronteira; ou seja, se fosse considerado apenas as emissões na geração de eletricidade, a intensidade de carbono do hidrogênio em questão seria resumida apenas nas emissões associadas ao fluxo de água, uma vez na geração fotovoltaica não é contabilizada nenhuma emissão de gases. Neste caso, as relevantes emissões estão na etapa de produção da célula fotovoltaica e do painel. 
+
+2. a importância do tratamento dados ao co-produtos; no caso da eletrólise, em termos mássicos, o oxigênio representa cerca de 90% dos produtos. Assim, uma abordagem de alocação neste sentido, favoreceria muito o hidrogênio que ficaria com apenas 10% da carga ambiental do upstream. Considerando a finalidade energética do hidrogênio, os estudos, em geral, preferem uma alocação energética, com 100% de alocação para o hidrogênio, visto o valor nulo associado ao oxigênio. 
+
+```{r figura14, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.align='center', fig.cap="Sistema-produto do hidrogênio (H~2~) obtido a partir da eletrólise da água."}
 
 knitr::include_graphics(path = 'figura_14.png')
 
 ```
 
-Figura \@ref(fig:figura15)
+Por fim, no caso da avaliação da produção de hidrogênio a partir da eletrólise da água utilizando eletricidade excedente de uma usina de etanol, o fator de emissão associado ao input de eletricidade poderia ser aproximadamente 24 kgCO~2e~/MWh, assumindo uma alocação econômica ou 45 kgCO~2e~/MWh assumindo uma alocação energética. Outros critérios de fronteiras ou alocação na obtenção de eletricidade podem resultar em outros fatores de emissão. 
 
-```{r figura15, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap=""}
+Veja como “o que existe por trás” faz diferença... Caso o hidrogênio fosse obtido a partir de eletrólise abastecida com eletricidade de uma planta de etanol, a pegada de carbono do hidrogênio cairia para cerca de 2,5 kgCO~2e~/kgH~2~.
+
+Muitos estudos têm sido conduzidos neste escopo, conforme pode-se encontrar em estudos selecionados e apresentados nas referências deste módulo. Como o objetivo aqui não é apresentar detalhadamente tais estudos, selecionou-se Mehmeti et al. (2018) para fins de exemplo. 
+
+Neste estudo, os autores estimaram a performance ambiental do hidrogênio produzido a parir de várias tecnologias, sob várias categorias de impactos, incluindo a pegada de carbono. É importante salientar as premissas assumidas pelos autores na análise: 
+
+1. Como unidade funcional, foi assumido 1,0 kg de hidrogênio obtido.
+
+2. Foram considerados os processos até a produção do hidrogênio, ou seja, upgrading, armazenamento, transporte e uso de hidrogênio não foram assumidos.
+
+3. Para fins de simplicidade, assumiu-se que todas as emissões seriam alocadas para o hidrogênio obtido, ou seja, o hidrogênio não dividiria a carga ambiental com eventuais co-produtos.  
+
+Os autores apresentaram um inventário simplificado, que pode ser reproduzido a partir das referências citadas no trabalho. A partir do trabalho original, na Figura \@ref(fig:figura15) seguinte, apresentam-se as rotas estudadas: reforma a vapor de gás natural e etanol, eletrólise da água a partir de energia eólica ou da eletricidade da rede, gaseificação da biomassa e fermentação escura de resíduos agrícolas. 
+
+```{r figura15, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.align='center', fig.cap="Rotas de produção de hidrogênio analisadas em Mehmeti et al. (2018)."}
 
 knitr::include_graphics(path = 'figura_15.png')
 
 ```
 
-Figura \@ref(fig:figura16)
+Independente da rota, a lógica é a mesma, ou seja, na perspectiva do ciclo de vida, cada um dos fluxos que compõem o inventário traz em si as cargas ambientais associadas à sua produção. Assim, no hidrogênio obtido a partir da reforma a vapor de gás natural também estariam “embutidas” às emissões atmosféricas geradas na obtenção dos insumos químicos utilizado no processo produtivo do metano, por exemplo. Ou, no caso de eletrólise da água, poderiam estar contabilizados os impactos ambientais associados aos materiais utilizados para a construção do parque eólico, e assim por diante. Os resultados reportados pelos autores podem ser vistos na Figura \@ref(fig:figura16). 
 
-```{r figura16, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap=""}
+Na medida do possível, categorizou-se o hidrogênio a partir do processo produtivo empregado, ou seja: hidrogênio “verde” obtido de material renovável; e hidrogênio cinza obtido de material fóssil. Apenas a obtenção de hidrogênio a partir eletrólise com eletricidade da rede não pode ser categorizada, uma vez que a rede é abastecida com eletricidade obtida de variadas fontes, tanto renováveis como não renováveis. Neste caso, utilizou-se a cor vermelha.
+
+```{r figura16, echo=FALSE, message=FALSE, warning=FALSE, out.width="70%", fig.align='center', fig.cap="Principais resultados das rotas de produção de hidrogênio analisadas em (Mehmeti et al., 2018)"}
 
 knitr::include_graphics(path = 'figura_16.png')
 
 ```
 
-Figura \@ref(fig:figura17)
+Observem como que a análise na perspectiva do ciclo de vida descontrói certas impressões. Se utilizarmos eletricidade e água para a obtenção de hidrogênio, considerando que a eletricidade é proveniente da rede, a pegada de carbono seria maior que o hidrogênio obtido da gaseificação de carvão mineral. Isso se dá, possivelmente, por dois motivos: 
 
-```{r figura17, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap=""}
+1. O processo de eletrólise demanda um montante considerável de eletricidade (cerca de 55 kWh/kgH~2~), e;
 
-knitr::include_graphics(path = 'figura_17.png')
+2. A rede de energia considerada é suprida majoritariamente por fontes fósseis resultando num elevado fator de emissão de 500 kgCO~2~/kWh. 
 
-```
+Da mesma forma, o hidrogênio obtido pela fermentação escura de resíduos agrícolas, mesmo sendo categorizado como “verde” acusou uma intensidade de carbono de 16 kgCO~2e~/kgH~2~. Isso se deu, devido ao considerável consumo de energia no processo. Enquanto isso, o hidrogênio obtido a partir da reforma a vapor de gás natural, que é um dos processos mais utilizados no mundo, resulta na emissão de 12 kgCO~2e~/kgH~2~ ao longo do ciclo de vida. 
+Mais uma vez, salienta-se que aspectos metodológicos também provocam mudanças significativas nos resultados. Os autores preferiram alocar toda a carga ambiental ao hidrogênio, mas sabemos, por exemplo, que na eletrólise, para cada quilograma de hidrogênio produzido, cerca de oito quilogramas de oxigênio são produzidos também. Supondo uma alocação em base mássica, cerca de 10% das emissões deveriam estar alocadas ao hidrogênio somente. Nos processos de eletrólise isso diminuiria consideravelmente a pegada de carbono.
+Ainda da Figura 5.16, para efeito de comparação, a intensidade de carbono do hidrogênio numa perspectiva energética ficaria entre 18 kgCO~2e~/GJ (eletrólise com energia eólica) e 246 kgCO~2e~/GJ (eletrólise com eletricidade da rede). Dos exemplos anteriores, a gasolina e etanol de cana reportaram 87 e 20 kgCO~2e~/GJ, respectivamente. 
 
-Figura \@ref(fig:figura18)
+Conforme mencionado anteriormente, a pegada de carbono de um produto, entendida como as emissões de gases de efeito estufa associadas a este produto consiste em apenas uma categoria de impacto. Muitas outras categorias podem ser analisadas a partir da ACV. Para fins de ilustração, sugere-se o acesso ao trabalho de Mehmeti et al. (2018), citado acima e nas referências, para observar o desempenho do hidrogênio em termos de potencial de toxicidade, ou de formação de oxidantes fotoquímicos, ou ainda de depleção da camada de ozônio.
 
-```{r figura18, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap=""}
+# O HIDROGÊNIO NAS POLÍTICAS DE BAIXO CARBONO {#secao6}
 
-knitr::include_graphics(path = 'figura_18.png')
+Conforme já mencionado, as Políticas de Baixo Carbono consistem em ações governamentais e de caráter tipicamente regulatório que promovem a produção e uso de produtos associados a baixas emissões de gases de efeito estufa. Cada política possui metodologias próprias, e algumas até obrigam a utilização de ferramentas de cálculo específicas. Porém, todas elas baseiam-se, direta ou indiretamente, na perspectiva do ciclo de vida, conforme apresentado no módulo anterior. Ou seja, ao estimar a pegada de carbono de um determinado combustível, por exemplo, são contabilizadas as emissões diretas na sua produção e uso, bem como as emissões indiretas ao longo da sua cadeira produtiva, incluindo, em alguns casos eventuais emissões de mudança do uso da terra. A seguir são apresentados alguns detalhes de algumas políticas vigentes.  
 
-```
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+A política vigente nos Estados Unidos, denominada de Renewable Fuel Standard (RFS) apresenta-se como uma das mais antigas. Tendo sido criada em 2005, a política possui metas anuais crescentes de consumo de combustíveis renováveis no país. De acordo com a política, os combustíveis renováveis são classificados em quatro categorias em função, especialmente, da redução de emissões de gases de efeito estufa ao longo do processo produtivo em comparação com os combustíveis fósseis. Nenhuma rota produtiva de hidrogênio está aprovada no âmbito do programa até o momento da elaboração deste curso. Porém, até o momento, existem petições em fase de avalição de hidrogênio obtido através da reforma a vapor de biometano (EPA/RFS, 2025). 
 
-Na Tabela \@ref(tab:tabela1) 
+A política europeia Renewable Energy Directive (RED) também se baseia em metas de uso de energias renováveis e combustíveis alternativos nos estados-membros da União Europeia. A versão mais recente da política (REDIII),  enquadra o hidrogênio, obtido de eletrólise de fontes renováveis, como combustíveis renováveis de origem não biológica (RFNBO, Renewable Fuels of Non-Biological Origin). Neste contexto, a política expande o papel do hidrogênio renovável além do setor de transporte, incentivando o uso em aplicações industriais ou outros usos energéticos. Há metas vinculativas: por exemplo, a RED III exige que 42% do hidrogênio usado na indústria seja renovável (RFNBO) até 2030, e esse valor sobe para 60 % até 2035. No setor de transporte, há uma sub-meta: um mínimo de 1 % da energia para transporte de 2030 deve vir de RFNBOs (European Hydrogen Observatory, 2025) .
 
-```{r tabela1, echo=FALSE, message=FALSE, warning=FALSE, tab.cap=""}
+Por sua vez, no Brasil, a promoção do uso de combustíveis renováveis tem sido liderada pelo programa RenovaBio (ANP, 2025) desde 2018. O programa ambiciona reduzir, em 10%, a intensidade de carbono na matriz de combustíveis no país em dez anos; ou seja, uma redução de 10% de todas as emissões associadas aos combustíveis consumidos no país. As metas de redução, que são um dos eixos do programa, são anualmente individualizadas para os distribuidores de combustíveis. Para alcançar tais metas, os distribuidores podem comprar créditos de descarbonização (CBIOs) na bolsa de valores, que consistem no segundo eixo do programa. Tais créditos são gerados pelos produtores de combustíveis certificados e são calculados numa abordagem de ciclo de vida, ou seja, levam em consideração aspectos da produção da matéria-prima, processo industrial e transporte. Cada CBIO equivale a uma tonelada de CO~2~ evitado pelo combustível daquele processo em comparação com o combustível fóssil. Assim, se um produtor de combustível possuir um processo mais eficiente que resulte em menores emissões, mais créditos ele poderá emitir e comercializar com os distribuidores. De maneira geral, o programa incentiva a consolidação de processos produtivos mais eficientes de combustíveis alternativos. Atualmente os combustíveis cadastrados no programa são: etanol de cana e de milho, etanol de segunda geração, biodiesel, biometano e combustíveis a partir do hidrotratamento de óleo vegetais. Similarmente à outras políticas, não há previsão, mas apenas sinalizações, que o hidrogênio como combustível possa fazer parte do programa em breve. 
+
+A despeito das características específicas de cada uma três políticas mencionadas acima, observam-se, ao menos, dois pontos convergentes: i) a contabilização das emissões de gases de efeito estufa (intensidade de carbono) ao longo do ciclo de vida do combustível, e ii) que já existem sinalizações que tais políticas estão se preparando para contabilizar rotas de produção de hidrogênio. Na Tabela \@ref(tab:tabela1), a seguir, são detalhadas alguns dos principais aspectos metodológicos assumidos em cada uma das políticas para a estimativa da pegada de carbono. Existem diferenças em termos de abordagens, gases contabilizados, unidade funcional e como os aspectos das mudanças do uso da terra são considerados. Os conceitos descritos nesta tabela já foram trabalhados no módulo anterior. 
+
+```{r tabela1, echo=FALSE, message=FALSE, warning=FALSE, tab.cap="Aspectos metodológicos de políticas de baixo carbono na contabilização da emissão de gases de efeito estufa."}
 library(magrittr, include.only = '%>%')
 library(gt)
 
 param_tec <- data.frame(
-  tipo_de_motor_primario = c('Motor de Combustão Interna',
-                             'Turbina a gás',
-                             'Motor Stirling',
-                             'FC tipo PEM',
-                             'Ciclo Orgânico Rankine (ORC)'),
-  combustivel = c('Gás Natural',
-                  'Gás Natural',
-                  'Biomassa',
-                  'H₂',
-                  'Calor residual'),
-  eficiencia = c('25 – 40',
-                 '25 – 35',
-                 '15 – 30',
-                 '45 – 60',
-                 '10 – 25'),
-  emissoes = c('Moderadas',
-               'Elevadas',
-               'Moderadas',
-               'Elevado vapor produzido',
-               'Baixas'),
-  tempo_de_partida = c('Moderado',
-                       'Moderado',
-                       'Alto',
-                       'Mínimo',
-                       'Muito alto'),
-  aplicacoes = c('Comerciais',
-                 'Longa escala',
-                 'Equipamentos CHP solares',
-                 'Tecnologias avançadas',
-                 'Recuperação de calor residual')
+  parametro = c(
+    'País',
+    'Abordagem',
+    'Unidade Funcional',
+    'Gases Considerados',
+    'Fronteiras',
+    'Mudança do Uso da Terra',
+    'Ferramenta de Cálculo'
+  ),
+  
+  rfs = c(
+    'Estados Unidos',
+    'Consequencial, contabilizando efeitos diretos e indiretos com a substituição dos coprodutos',
+    'MJ combustível',
+    'CO₂, CH₄ e N₂O (GWP100). Compostos Orgânicos Voláteis (COV) e CO convertidos em CO₂ por relação molecular',
+    'Poço à roda',
+    'São contabilizadas as emissões diretas e indiretas associadas às mudanças do uso da terra, a partir de modelagem econômica',
+    'GREET, CENTURY, FASOM e FAPRI-CARD'
+  ),
+  
+  red = c(
+    'União Europeia',
+    'Atribucional com alocação energética',
+    'mmBtu combustível',
+    'CO₂, CH₄ e N₂O (GWP100). Compostos Orgânicos Voláteis (COV) e CO convertidos em CO₂ por relação molecular',
+    'Poço à roda',
+    'Emissões de mudança direta são contabilizadas; por outro lado, existem limitações para combustíveis oriundos de áreas com elevado estoque de carbono',
+    '-'
+  ),
+  
+  renovabio = c(
+    'Brasil',
+    'Atribucional com alocação energética',
+    'MJ combustível',
+    'CO₂, CH₄ e N₂O (GWP100)',
+    'Poço à roda',
+    'Critério de elegibilidade; não há contabilização na pegada de carbono',
+    'RenovaCalc'
+  )
 )
 
 param_tec %>%
-  gt(caption = 'Características dos motores principais de sistemas de micro cogeração (m-CHP) para aplicações residenciais. Fonte: [6] [7] ') %>%
+  gt(
+    caption = 'Aspectos metodológicos de políticas de baixo carbono na contabilização da emissão de gases de efeito estufa.'
+  ) %>%
   tab_style(
     style = list(
       cell_fill(color = "#2e7d32"),
@@ -481,18 +444,53 @@ param_tec %>%
     locations = cells_column_labels()
   ) %>%
   cols_label(
-    tipo_de_motor_primario = 'Tipo de Motor Primário',
-    combustivel = 'Combustível',
-    eficiencia = 'Eficiência (%)',
-    emissoes = 'Emissões',
-    tempo_de_partida = 'Tempo de Partida',
-    aplicacoes = 'Aplicações'
+    parametro = 'Parâmetro',
+    rfs = 'RFS',
+    red = 'RED',
+    renovabio = 'RenovaBio'
   ) %>%
   cols_align(
     align = "center",
     columns = everything()
   )
 ```
+
+
+# OUTRAS CATEGORIAS DE IMPACTO ALÉM DO CARBONO
+
+Em função da posição estratégica do hidrogênio no contexto da descarbonização, e considerando que as metodologias para a estimativa da Intensidade de Carbono já estão consolidadas, percebe-se que indicadores associados à descarbonização recebem uma grande atenção. 
+
+Porém, é razoável supor que uma transição energética sustentável ou o desempenho ambiental de um sistema energético vai muito além das emissões de carbono. Percebe-se que algumas políticas de baixo carbono, nas versões mais atualizadas, passa a considerar outras categorias ambientais além da intensidade de carbono. Vide, por exemplo, o CORSIA (ICAO, 2025) para o setor de aviação, que passa a considerar, juntamente com as emissões de carbono, aspectos associados ao solo, água, uso de químicos, direitos humanos, entre outros. Pode-se esperar uma expansão dos critérios nas diversas regulamentações, incluindo programas de certificação, na medida que tais mecanismos evoluam com o tempo. 
+
+# CERTIFICAÇÕES DE HIDROGÊNIO
+
+As ambições acerca da produção e uso do hidrogênio estão diretamente associadas aos eventuais benefícios ambientais que o hidrogênio proporcionaria em relação às alternativas fósseis. Sabe-se que o hidrogênio pode ser obtido de diferentes rotas, cada qual com desempenho técnico-econômico e ambiental específicos. Assim, para que haja uma mínima garantia que aquele volume de hidrogênio produzido contribua para uma efetiva transição energética sustentável, faz sentido certificá-lo. As certificações ambientais, já existentes para vários produtos, não estão associadas exclusivamente às políticas de baixo carbono. As emissões de gases de efeito estufa podem ser um dos critérios para a certificação, mas outros aspectos podem ser abordados. 
+
+Atualmente não existe um mecanismo internacional para a certificação do hidrogênio. Porém, são observadas várias tentativas recentes em vários países para o desenvolvimento destes mecanismos. Dentre tais tentativas, encontram-se mecanismos voluntários e obrigatórios, que considere apenas uma rota produtiva ou várias, ou que consideram um aspecto ambiental ou mais de um. Nas Figuras \@ref(fig:figura17) e Figura \@ref(fig:figura18) seguintes, vale-se do resumo desenvolvido pela IRENA referente aos mecanismos de certificação de hidrogênio que estão disponíveis no mundo. Maiores detalhes podem ser verificados no estudo original (IRENA, 2023). 
+
+```{r figura17, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.align='center', fig.cap="Resumo dos mecanismos de certificação voluntários de hidrogênio (IRENA, 2023)."}
+
+knitr::include_graphics(path = 'figura_17.png')
+
+```
+
+Figura \@ref(fig:figura18)
+
+```{r figura18, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.align='center', fig.cap="Resumo dos mecanismos de certificação obrigatórios de hidrogênio (IRENA, 2023)."}
+
+knitr::include_graphics(path = 'figura_18.png')
+
+```
+
+A despeito das características específicas de cada mecanismo, aqui vale considerar alguns conceitos que são comumente empregados neste contexto.
+
+Para rotas baseadas em eletrólise da água, a Garantia de Origem da eletricidade, i.e. qual a fonte de energia, é fator fundamental. Junta-se a este aspecto a comprovação da Adicionalidade do projeto de hidrogênio; ou seja, a demanda de eletricidade de um novo eletrolisador deve estar associado (fisicamente ou comercialmente) à nova geração de energia; evitando que tal demanda seja suprida pelas fontes existentes. Por sua vez, a correlação temporal especifica a correlação entre o momento que o hidrogênio é produzido e geração de eletricidade. 
+
+A correlação geográfica especifica a correlação entre o local onde o eletrolisador está instalado e a subsistema de geração de eletricidade (biding zone), a fim de garantir que a energia renovável “contratada” pelo produtor de H₂ seja realmente acessível fisicamente; que não haja deslocamento de emissões entre regiões com diferentes intensidades de carbono; e que o hidrogênio não alegue uso de eletricidade renovável distante, impossível de ser entregue sem congestão ou perdas.
+
+Por fim, além de rotas baseadas em eletrólise alguns mecanismos impõem limites de emissões (emissions theshold, kgCO~2e~/kgH~2~) de carbono associadas à produção de hidrogênio. Tais emissões referem-se à intensidade de carbono (ou pegada de carbono) estimada a partir dos pressupostos mencionados nos itens anteriores.  
+Em termos de rastreabilidade do hidrogênio produzido, percebe-se que duas abordagens: Balanço de massa, quando a geração do produto acompanha fisicamente (de maneira integral ou parcial) o atributo ambiental; e Book & Claim, quando a geração física não acompanha a comercialização do atributo. Para o primeiro caso, o hidrogênio de baixo-carbono usado é o mesmo produzido; no segundo caso, pode-se comprar um hidrogênio de baixo carbono, a fim de contabilização de metas da organização, mas o uso da quantidade comprada acontece em outro usuário.   
+Especificamente no Brasil, a Câmara de Comercialização de Energia Elétrica (CCEE, 2025) tem liderado as iniciativas para a criação de um mecanismo de certificação de hidrogênio produzido no Brasil. Em fins de 2022, a primeira versão do manual de certificação foi lançada, abrangendo apenas a produção de hidrogênio a partir de eletrólise da água. A certificação baseia-se, até o momento, em dois aspectos principais: i) a origem da eletricidade, ou seja, se é renovável ou não; e ii) a intensidade de carbono do produto, considerando exclusivamente as emissões associadas à eletricidade consumida. Salienta-se que, de acordo com a versão preliminar do manual, entende-se como energia renovável, a energia solar, hidráulica, eólica, geotérmica, maremotriz e a partir da biomassa. Quanto às emissões, se a energia é comprovadamente renovável, considera-se que as emissões são nulas. Vários cenários são descritos no documento, como eletrolisadores abastecidos por plantas de eletricidade dedicadas, e eletrolisadores abastecidos pela rede com o sem contratos de compra energia renovável no mercado livre. Ainda, a correlação temporal, na versão preliminar do mecanismo é mensal ou trimestral. Ou seja, a certificação do hidrogênio produzido em uma determinada planta eletrolítica passa pela contabilização da quantidade obtida por mês frente a quantidade de energia renovável consumida pela planta. A partir daí, e respeitando as outras exigências da certificação, pode-se rotular a parcela do hidrogênio produzido que é considerado “hidrogênio verde”.  
 
 # REFERÊNCIAS {-}
 
