@@ -1,0 +1,535 @@
+---
+title: "ASPECTOS AMBIENTAIS DO H₂"
+author: "**Autor**: _<br>[**Prof. Dr. Rafael Capaz**]( http://lattes.cnpq.br/9447786439023437)_"
+date: "**Última Atualização**: `r format(Sys.Date(), '%d de %B de %Y')`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: ["packages.bib"]
+csl: "abnt_numerico.csl"
+link-citations: yes
+classoption: openany
+github-repo: rstudio/bookdown-demo
+---
+
+# HIDROGÊNIO NA TRANSIÇÃO ENERGÉTICA SUSTENTÁVEL
+
+Conforme já mencionado, o hidrogênio, na forma molecular (H2), é apontado como uma alternativa estratégica na transição energética, ocupando posição de destaque como “vetor energético”. De maneira geral, entende-se “transição energética” como a movimentação dos setores econômicos, governos e sociedade em geral, em promover a produção e uso de energia a partir de fontes mais independentes de recursos não-renováveis e baixa emissão de gases de efeito estufa. Certamente, numa perspectiva de sustentabilidade, outros aspectos ambientais, além da emissão de carbono, e aspectos sociais devem ser contabilizados nesta transição.
+
+A primeira tentativa de rotular o hidrogênio a partir da sua origem, considerando a matéria-prima e/ou a rota tecnológica, baseou-se em diferentes cores, como pode ser visualizado na Figura \@ref(fig:figura1) seguinte. Salienta-se que existem variações tanto nos rótulos quanto nas suas respectivas descrições. 
+
+```{r figura1, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.align='center', fig.cap="Rotulagem de hidrogênio de acordo com processo de produção (Morgan, 2025)"}
+
+knitr::include_graphics(path = 'figura_01.png')
+
+```
+
+Apesar do apelo visual, percebe-se que as simplificações promovidas por tal rotulagem não permitem uma análise mais aprofundada dos aspectos ambientais (e sociais) associados à toda a cadeia de hidrogênio. Neste sentido, os recentes programas de certificação de hidrogênio, em consonância com as políticas de baixo carbono^[Políticas de Baixo Carbono (Low Carbon Policies) consistem em programas governamentais para a promoção de produção e uso de fontes de energia associadas à baixas emissões de gases de efeito estufa (GEE) em comparação com as fontes fósseis.], baseiam-se em parâmetros que vão além da origem do hidrogênio ou do processo de conversão.  
+
+A avaliação de um produto considerando toda a cadeia de suprimento (supply-chain) – isto é, incluindo os fornecedores, fabricantes , distribuidores e, eventualmente, o fim da vida útil do produto – converge para uma perspectiva de análise comumente chamada Análise do Ciclo de Vida. Esta perspectiva será abordada no item seguinte. Na figura \@ref(fig:figura1), pode-se observar alguns aspectos desta perspectiva. Veja nas colunas onde são informadas as emissões diretas de gases de efeito estufa (Direct global warming impacts), ou seja, as emissões no processo produtivo, e as emissões adicionais (Additional global warming impacts), ou seja, as emissões ao longo da cadeia de suprimento. Vale salientar que os valores reportados podem variar em função de características específicas do processo ou de aspectos metodológicos, como serão indicados a seguir. 
+
+# O QUE É A PERSPECTIVA DO CICLO DE VIDA?
+
+Numa perspectiva tipicamente reativa e atual, grande parte dos consumidores ou usuários passa a se preocupar com a “poluição”, ou os impactos ambientais associados, apenas após o uso do produto. Ou seja, ao consumir um alimento qualquer, o consumidor, com um mínimo de consciência ambiental, preocupa-se em jogar as embalagens e os restos de comida em locais apropriados. A partir daí a poluição estaria aparentemente controlada. 
+
+Numa perspectiva mais ampla, deveria ser considerado toda a carga ambiental embutida naquele produto, como: os recursos naturais utilizados para obtê-lo; a energia consumida ao longo do processo produtivo; o volume de efluentes líquidos e resíduos sólidos gerados no processo, bem com seu descarte, incluindo a embalagem; emissões atmosféricas no transporte do produto; as condições de trabalho da mão de obra; etc. 
+
+Enfim, ao olhar um simples alimento embalado na prateleira do supermercado, percebe-se que muitos impactos ambientais já estão embutidos ali, e o controle efetivo da poluição inicia-se não apenas após o consumo do alimento, mas na escolha do mesmo. Afinal, ao escolher um produto ou outro, ativa-se toda uma cadeia produtiva que está por trás deste ou daquele produto. Agir dessa forma não consiste numa visão extremista da realidade, em especial quando pretende-se incorporar devidamente as questões ambientais nas tomadas de decisão.
+
+Esta nova perspectiva do ciclo de vida dos produtos é muito adequada no contexto da tão almejada transição energética e descarbonização. Embora muitos ainda utilizem as fontes renováveis de energia como sinônimos de alternativas sustentáveis, percebe-se que tal afirmação é frágil, sobretudo quando se consideram os impactos embutidos naquele “produto” energético. Por exemplo, no posto de combustível, ao preferir um biocombustível – como biodiesel ou etanol – a um combustível fóssil, espera-se uma redução da emissão de carbono fóssil para atmosfera com benefícios incontestes para a desaceleração das mudanças climáticas. Porém, esta escolha seria racional se o biocombustível fosse obtido de uma floresta desmatada? Usá-lo não parece ser uma atitude sensata; pois, embora a emissão de carbono fóssil no escapamento do veículo seja nula, as emissões de carbono no desmatamento poderiam ser bem maiores que o uso de um combustível fóssil em si. Isso sem falar em outros impactos como destruição de espécies vegetais e nichos ecológicos em função do desmatamento da floresta. 
+
+Discussões e debates a partir da perspectiva do ciclo de vida de produto têm sido conduzidas com frequência cada vez maior, utilizando uma ferramenta de gestão denominada de Avaliação do Ciclo de Vida (ACV), ou Life Cycle Assessment (LCA). Com a produção e uso de hidrogênio, este tipo de análise ganha um espaço importante. 
+
+Mas afinal, o que é ACV?
+
+De acordo com a norma ISO 14040(ABNT, 2009a), uma ACV pode ser definida como: a compilação e avaliação das entradas, saídas e do impacto ambiental potencial de um produto através de seu ciclo de vida. Em outras palavras, a ACV pode ser definida como uma abordagem de sistemas do “berço ao túmulo”, ou seja, iniciando-se com o recurso natural, utilizado como matéria-prima do processo, e encerrando-se com o resíduo gerado pelo consumo do produto que agora volta à natureza.
+
+Pelas definições, observa-se que uma ACV é o resultado de dois grupos de parâmetros:
+
+1. Entradas e saídas nas fronteiras do sistema analisado para a obtenção do respectivo produto.
+
+2. Impactos ambientais associados a essas entradas e saídas.
+
+Entre as vantagens comumente verificadas com o uso desta ferramenta, pode-se citar:
+
+- Permite visualizar de forma quantitativa o desempenho ambiental de todo o processo produtivo sinalizando pontos críticos;
+
+- Auxilia os tomadores de decisão no setor produtivo em selecionar as melhores alternativas para o processo, considerando aspectos ambientais;
+
+- Dá suporte para programas de rotulagem de produtos; e
+
+- Fornece informações aos consumidores, influenciando suas tomadas de decisão ao selecionar melhores produtos em termos ambientais.
+
+De acordo com a literatura, a primeira ACV foi conduzida em meados dos anos sessenta, no contexto de um fabricante de bebidas, com o objetivo de escolher qual o melhor recipiente para estocagem e comercialização (Guinée et al., 2011). 
+
+A partir da crise do petróleo nos anos setenta, o interesse na contabilização dos fluxos energéticos em processos produtivos intensificou-se, e muitas “análises energéticas” ou “balanços energéticos” na perspectiva do ciclo de vida foram elaboradas, como na indústria de automóveis, metalurgia e de alimentos. 
+
+Este tipo de análise energética, pode ser definido como o estudo sistemático dos fluxos de energia através de um sistema produtivo, permitindo deduzir a quantidade de insumos energéticos requeridos para produção de algum bem, além de identificar e localizar as perdas associadas. Com esse tipo de análise, pode-se determinar a energia embutida em um determinado produto (embodied energy), isto é, a energia consumida para produzi-lo, bem como comparar, no caso de combustíveis, a quantidade de energia líquida entregue pelo produto frente seu custo energético (net energy analysis). Além de ser usada até hoje como critério para a escolha de processos com melhor custo energético, este tipo de análise pode fornecer informações consistentes a programas de redução no consumo de energia ou que visem à utilização de fontes renováveis. 
+
+A partir da década de noventa, a necessidade de uma padronização metodológica para a ACV tornou-se fundamental. Na mesma época, o aumento do interesse nas questões ambientais fez com que especialistas se debruçassem na expansão da metodologia para além de um simples inventário de entradas e saídas. Neste contexto, a Organização Internacional de Padronização (ISO) determinou aos comitês internos a elaboração de normas sobre a Análise do Ciclo de Vida de produtos. No Brasil, atualmente, conta-se com as normas ISO14040 – Avaliação do ciclo de vida – Princípios e estrutura(ABNT, 2009a), e ISO14044(ABNT, 2009b). 
+
+A seguir as premissas e as etapas de uma ACV, a partir destas normas, serão detalhadas. 
+
+# QUAIS AS ETAPAS DE UMA ACV?
+
+De maneira geral, uma típica Análise (ou avaliação) do Ciclo de Vida, de acordo com a norma ISO 14040, é composta pelas seguintes etapas que podem ser visualizadas na Figura \@ref(fig:figura2).
+
+```{r figura2, echo=FALSE, message=FALSE, warning=FALSE, out.width="30%", fig.align='center', fig.cap="Etapas da ACV (baseado em ISO14040)(ABNT, 2009a)"}
+
+knitr::include_graphics(path = 'figura_02.png')
+
+```
+
+A partir de uma ordem lógica, na primeira fase da ACV, as premissas da análise devem ser claramente definidas. O que foi ou não considerado é fundamental para que a análise seja conduzida de maneira transparente, e que os resultados possam ser reproduzidos e comparados com outros estudos. 
+
+Daí segue-se para a etapa de elaboração do inventário. Esta etapa é o coração da ACV, e consiste na caracterização quantitativa e qualitativa de todas as etapas e processos considerados no ciclo de vida. De maneira geral, a qualidade dos resultados depende em grande parte da qualidade do inventário. 
+
+A ACV em si, ocorre na terceira etapa quando os fluxos inventariados são traduzidos em impactos ambientais a partir de metodologias próprias.
+
+Por fim, segue-se a interpretação dos resultados. Vale salientar que é muito comum numa ACV, durante a fase de interpretação, retornar a etapas anteriores para fins de ajuste e remodelagem.
+
+A seguir, cada uma destas etapas é detalhada. 
+
+## Etapa 1 - Definições
+
+Nesta etapa, apresentam-se os objetivos e a extensão do estudo pretendido. Enfim, quais são as perguntas que o estudo pretende responder. Da mesma forma, alguns itens devem estar claramente definidos no estudo, como: as fronteiras do sistema a ser analisado, a unidade funcional, a abordagem utilizada para os casos de coprodução. Em geral, é comum que as categorias de impacto consideradas e os métodos empregados sejam também mencionados nesta primeira etapa. 
+
+Entende-se por sistema produto, as etapas e processos produtivos que estão dentro das fronteiras do sistema (vide Figura \@ref(fig:figura3)).
+
+```{r figura3, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.align='center', fig.cap="Fronteiras do “berço ao portão” (cradle-to-gate) de um sistema-produto para a produção de “A”. Linhas azuis: fluxos-produto; Linhas verdes: fluxos elementares; Quadrados  azul-escuro: processos foreground; Quadrado vermelho: processo de disposição final; Demais quadrados: processos background."}
+
+knitr::include_graphics(path = 'figura_03.png')
+
+```
+
+Ao se estabelecerem as fronteiras do sistema, consegue-se elencar os fluxos de entrada e saída, além dos fluxos intermediários. 
+
+Os fluxos de entrada correspondem a recursos, obtidos diretamente da natureza (fluxos elementares), ou a insumos provenientes de outros processos produtivos (fluxos-produto). Ainda, tais fluxos podem abranger outros parâmetros, nem sempre simples de quantificar, como os fluxos associados ao uso da mão de obra. Por sua vez, os fluxos de saída associam-se aos efluentes e resíduos gerados (na forma de fluxos elementares), bem como ao produto e subprodutos do processo.  Em geral, os processos do ciclo de vida nos quais o analista possui algum controle, quer seja na sua descrição ou gestão (processos foreground), são aqueles mais próximos do produto de interesse e que impactam mais os resultados finais. Porém, dependendo das fronteiras do sistema-produto, outros processos fora do controle do analista devem ser acionados ao longo da análise (processos background) a partir de base de dados específicas.
+
+É conveniente reportar quais os fluxos que não serão contabilizados em função de critérios de corte pré-definidos. Por exemplo, dependendo do sistema analisado, é comum não serem considerados fluxos associados a insumos químicos usados em pequenas quantidades (ex: catalisadores) ou a fluxos referentes a infraestrutura (ex: reatores, prédios industriais, etc), uma que vez que estes representariam uma parcela muito pequena nos resultados finais quando se consideram a vida útil do prédio ou dos equipamentos.  
+
+As fronteiras do sistema consistem num aspecto sensível da análise, uma vez que em ACV, contabilizam-se os fluxos que cruzam a fronteira. Não existem regras gerais que delimitem as fronteiras a serem consideradas. Assim, uma ACV pode ser conduzida:
+
+- do “berço ao túmulo” (cradle to grave), isto é, quando se contabiliza todas as etapas do ciclo de vida de produto, considerando a aquisição de matéria-prima, produção do produto, distribuição, uso e disposição final;  
+
+- do “berço ao portão” (cradle to gate), quando são contabilizas as etapas do ciclo de vida até a “porta da indústria, ou seja, impactos associados ao uso do produto, disposição final e, eventualmente distribuição, não são considerados. 
+
+- do “portão ao portão” (gate to gate), quando se considera apenas uma etapa do processo produtivo.
+
+A fim de tornar a análise homogênea, os fluxos sempre devem estar relativos a uma unidade funcional pré-definida, como volume, massa, energia ou ainda outra unidade que faça referência à função do produto analisado. Logo, tanto o inventário como os resultados de uma ACV, geralmente são expressos a partir desta unidade funcional, ou seja: a área total ou energia ou água demandada para produzir um kg de produto, ou a emissão de poluentes para o solo por m³ do produto obtido, ou ainda, o total de emissões atmosféricas por cada item de produto. Vê-se nos exemplos acima que “kg de produto”, ou “m³ de produto”, ou “item” seriam as unidades funcionais assumidas para aqueles estudos. 
+
+Para sistemas de produção de hidrogênio –em especial em análises do berço ao portão – é conveniente que os resultados da ACV sejam reportados juntamente com as características do hidrogênio produzido, como o estado físico do hidrogênio na saída, pressão e grau de pureza. Isso permitiria uma mesma base de comparação, visando captar diferenças nos aspectos produtivos do hidrogênio e não necessariamente no seu uso. 
+
+Por fim, nesta primeira etapa da ACV, deve-se deixar claro qual é a abordagem assumida para sistemas com multi-produção, ou seja, processos produtivos dos quais obtêm-se mais de um produto. Tal fato é observado, por exemplo, na eletrólise da água quando se obtém hidrogênio e oxigênio. A abordagem adotada também consiste num aspecto sensível da análise, podendo ocasionar relevantes diferenças nos resultados finais. 
+
+As normas ISO (ABNT, 2009b, 2009a) sugerem uma ordem de preferência destas possíveis abordagens: primeiro deve-se tentar subdividir o sistema a fim de serem contabilizados apenas os fluxos associados à produção do produto de interesse. Porém, nem sempre isso é possível, como, por exemplo, em casos quando mais de um produto é obtido a partir de reações químicas. Na sequência, a norma sugere que as fronteiras do sistema sejam expandidas a fim de contabilizar eventuais créditos devido à substituição de processos convencionais por produtos obtidos no sistema analisado. Por fim, pode-se tentar dividir a “carga ambiental” entre os produtos, considerando a relação física (massa ou energia, por exemplo) ou econômica entre eles. A aplicação destas abordagens ficará mais clara com os exemplos a seguir (vide seção \@ref(secao5)). 
+
+## Etapa 2 - Inventário do Ciclo de Vida
+
+Nesta etapa contabilizam-se quali-quantitativamente os fluxos, de entrada e saída, considerados na análise em função das fronteiras definidas anteriormente. Deve-se atentar para a representatividade e o método de coleta de dados a fim de garantir uma boa qualidade dos mesmos e, consequentemente, a confiabilidade e a comparabilidade dos resultados. 
+
+Para fins de elaboração do inventário, conforme mencionado anteriormente (Figura \@ref(fig:figura3)) denominam-se fluxos elementares todos os fluxos que cruzam as fronteiras do sistema-produto e vão diretamente para o ambiente ou que são provenientes diretamente da natureza. Dentre exemplos de fluxos elementares, pode-se citar os recursos naturais (água, minerais, etc) ou emissões de substâncias para o solo, água ou ar. 
+
+Ainda, fluxos-produto (vide Figura \@ref(fig:figura3)) são provenientes de outros processos produtivos. Ao modelar uma ACV em softwares específicos, o usuário sempre deve sinalizar a origem de cada fluxo-produto. Ou seja, se no sistema analisado, consome-se eletricidade, na modelagem deve-se assumir não apenas a fonte de eletricidade, mas qual ciclo de vida acionado para gerar aquela demanda de eletricidade, como, por exemplo: eletricidade a partir de gás natural em condições americanas ou européia, ou eletricidade a partir de fonte eólica considerando uma média mundial, ou eletricidade a partir de fontes hídricas associadas a grandes reservatórios, etc. Existem várias bases de dados (para processos background), gratuitas ou não, que trazem os mais variados inventários em variadas condições e localizações geográficas. Seguem alguns exemplos: [**Ecoinvent**](https://ecoinvent.org/); [**U.S.LCI**](https://www.nrel.gov/lci/), [**Agri-footprint**](https://blonksustainability.nl/agri-footprint#gsc.tab=0), [**SICV**](https://sicv.acv.ibict.br/), entre outras. 
+
+## Etapa 3 - Avaliação do Ciclo de Vida
+
+Nesta etapa, os fluxos inventariados anteriormente são devidamente caracterizados. Em outras palavras, é como se o analista colocasse uma “lente” e passasse a enxergar todos aqueles fluxos de insumos, matéria-prima, energia, efluentes e emissões sob uma ótica específica de potenciais impactos ambientais. Para tal, são utilizadas metodologias baseadas em mecanismos ambientais que traduzem (caracterizam) aqueles fluxos inventariados em uma determinada categoria de impacto. 
+
+Neste contexto, existem várias metodologias possíveis de serem utilizadas. Pode-se citar algumas: [**ReCiPe**](https://pre-sustainability.com/articles/recipe/), [**BEES+**](https://www.nist.gov/services-resources/software/bees), [**AWARE**](https://wulca-waterlca.org/what-is-aware/) e [**CML**](https://www.universiteitleiden.nl/en/research/research-output/science/cml-ia-characterisation-factors#downloads). Vale recordar que as metodologias possuem características específicas, podem abranger várias ou apenas uma categoria de impacto, com diferentes fatores de caracterização. 
+
+Por outro lado, as categorias de impacto podem ser classificadas como midpoint ou endpoint. No primeiro caso, foca-se no potencial impacto, como: nível de toxicidade, aquecimento global, depleção na camada de ozônio, eutrofização, entre outros. No segundo caso, foca-se no dano ambiental em si, como: extinção de espécies, mortes e depleção de recursos. Em geral, softwares especializados para ACV já são abastecidos com estas metodologias. Nas referências deste material, encontra-se o relatório da metodologia ReCiPe (Huijbregts et al., 2016), atualmente muito utilizada em ACV. No relatório são mencionadas as várias categorias midpoint e endpoint consideradas, bem como a descrição dos mecanismos ambientais assumidos.  
+
+## Etapa 4 - Interpretação
+
+Por fim, a interpretação dos resultados é uma das etapas mais relevantes da ACV, pois pode servir de base para tomadas de decisão a nível individual, corporativo ou até nacional. Num dos últimos módulos deste curso, fala-se rapidamente sobre políticas nacionais de baixo carbono, onde pode-se ver como muitas delas se baseiam em ACV. 
+
+Nesta etapa, os resultados podem ser analisados e comparados com outros sistemas. Porém, deve-se ter o cuidado de sempre verificar quais as premissas adotadas nos estudos. Conforme salientado anteriormente, os estudos são muito sensíveis a tais premissas. 
+
+Da mesma forma, é muito interessante comparar a contribuição de cada etapa do ciclo de vida nos resultados finais. Nesta análise, denominada de “contribucional”, pode-se observar onde estariam os gargalos de processo ou de logística que, eventualmente, poderiam ser melhorados visando o melhor desempenho ambiental do produto. Análises de sensibilidade ou de incerteza também podem ser conduzidas nesta etapa. 
+
+# O QUE É A INTENSIDADE DE CARBONO?
+
+Conforme mencionado anteriormente, a ACV de um determinado produto ou serviço pode ser conduzida para várias categorias de impacto simultaneamente. Porém, para que os conceitos associados à ACV sejam devidamente consolidados, vamos exemplificá-los, nos itens a seguir, para uma categoria apenas: o potencial de aquecimento global. Atualmente esta é a principal categoria exigida nos mecanismos de certificação de hidrogênio de baixo carbono.
+
+As preocupações atuais com a dependência de insumos fósseis e as mudanças climáticas têm sido uma grande motivação para analisar os potenciais impactos ambientais ao longo do ciclo de vida de produtos e serviços. 
+
+Neste contexto, o indicador Intensidade de Carbono (CI, Carbon Intensity ou Carbon Footprint, Pegada de Carbono) busca quantificar as emissões de carbono e gases de efeito estufa associadas às mais variadas etapas de um ciclo produtivo, como: etapa agrícola, processos industriais, e transporte; podendo ser considerados também o uso e disposição final de produtos. Geralmente, em ACV, o indicador CI corresponde à categoria de impacto denominada potencial de “aquecimento global” ou potencial de “mudanças climáticas”.  
+
+A partir de premissas já consolidadas, a pegada de carbono é expressa em massa de dióxido de carbono equivalente por unidade funcional. Por exemplo: quilogramas de CO~2~ equivalente (CO~2e~) por quilograma de produto produzido; ou toneladas de CO~2~ equivalente por kWh de energia consumida; ou gramas de CO~2~ equivalente por m^2^ de área utilizada, etc.
+
+A unidade tipicamente utilizada para expressar a pegada de carbono permite exemplificarmos alguns aspectos fundamentais de uma ACV, como: a caracterização dos fluxos inventariados. 
+
+Conforme mencionado anteriormente, a caracterização dos fluxos do ciclo de vida visa quantificar o potencial de impacto associado àquele produto e serviço. Assim, o procedimento de caracterização baseia-se em mecanismos ambientais que associa um determinado fluxo a um potencial impacto ambiental. 
+
+Tomando como exemplo a pegada de carbono, os chamados gases de efeito estufa podem ser definidos como aqueles gases que, na atmosfera, tem a capacidade absorver a radiação emitida pela superfície da Terra. Até certo ponto este é um efeito natural; porém o aumento da concentração destes gases na atmosfera desencadearia alterações no clima. Neste sentido, o gás estufa também pode ser definido como um agente climático e, em função de suas características como sua composição molecular, pode estar associado ao maior ou menor aquecimento da atmosfera. Esta capacidade de aquecimento é denominada de forçante radiativa positiva. Quando se compara a forçante radiativa de um determinado gás estufa ao longo do tempo de residência na atmosfera com a forçante radiativa do dióxido de carbono, calcula-se o Poder de Aquecimento Global (Global Warming Potential) daquele gás. 
+
+A fins de exemplificação, estima-se que a capacidade de aquecimento do metano com residência de 100 anos na atmosfera é cerca de 28 vezes maior que a capacidade de aquecimento do dióxido de carbono neste mesmo período. Da mesma forma, a capacidade de aquecimento do óxido nitroso com residência de 100 anos na atmosfera é cerca de 265 vezes maior que a capacidade de aquecimento do dióxido de carbono. Numa análise do ciclo de vida, estes números “28” e “265” são os chamados fatores de caracterização do metano e óxido nitroso, respectivamente. Ou seja, numa ACV, todas as emissões de metano e óxido nitroso para atmosfera serão multiplicados pelo seu respectivo fator de caracterização. Como o fator de caracterização refere-se ao poder de aquecimento em relação ao dióxido de carbono, as emissões destes gases podem ser expressas em dióxido de carbono equivalente (CO~2e~). 
+
+Nos documentos do Painel Intergovernamental de Mudanças Climáticas(IPCC, 2013) existe uma longa lista de gases de efeito estufa e seus respectivos GWP’s por diferentes tempos de residência na atmosfera. 
+
+Pelo que foi mencionado acima, vale salientar que o fator de caracterização do CO~2~ de origem fóssil é assumido como 1. Porém, dependendo do caso que está sendo analisado, se o carbono emitido for de origem biogênica, como a queima de um combustível proveniente da biomassa, o fator de caracterização do CO~2~ emitido pode ser considerado nulo, uma vez que aquele carbono emitido seria absorvido posteriormente pela biomassa através da fotossíntese, fechando o ciclo e não associando-se ao incremento deste gás estufa na atmosfera. 
+
+A contabilização da emissão de gases estufa tem se tornado uma prática corporativa comum, através da publicação de inventário de emissões. Uma das metodologias utilizadas mundialmente para este inventário consiste no GHG Protocol ([**https://ghgprotocol.org/**](https://ghgprotocol.org/)). De maneira geral, as emissões contabilizadas são divididas em três escopos. 
+
+No Escopo 1, são contabilizadas as emissões diretas de gases de efeito estufa, ou seja, aquelas que ocorrem dentro do processo produtivo, podendo ser controladas diretamente pela empresa. Neste escopo, pode-se citar: as emissões provenientes da queima de combustíveis ou uso de veículos, emissões provenientes dos processos industriais ou do tratamento de resíduos e efluentes. Por sua vez, no Escopo 2, são contabilizadas as emissões referentes a aquisição de eletricidade. Por fim, no Escopo 3, são contabilizadas emissões associadas aos insumos utilizados pela empresa ou as emissões referentes ao transporte e distribuição dos produtos, uso e disposição final. Estas são emissões que a empresa não controla diretamente, por isso são denominadas emissões indiretas. Em geral, as empresas, ao adotar a metodologia GHG Protocol, são obrigadas a reportar as emissões associadas ao Escopo 1 e 2. Para a estimativa das emissões do Escopo 3 seria necessária uma abordagem de ciclo de vida.  
+
+A partir dos conceitos apresentados até agora, vamos apesentar, a seguir, uma ACV completa, considerando o potencial de aquecimento global de certos combustíveis.
+
+# ESTIMATIVA DA INTENSIDADE DE CARBONO NO CONTEXTO DE SISTEMAS ENERGÉTICOS {#secao5}
+
+## Aplicação Genérica na Produção e Uso de Biocombustível
+
+A ACV é, fundamentalmente, uma análise comparativa. Ou seja, ela visa dar subsídios para uma tomada de decisão quando são comparados, no mínimo, dois cenários distintos. 
+
+Conforme visto até aqui, a transição energética e a descarbonização estão entre as principais motivações deste curso. Assim, a produção de uso de energia de baixo carbono pode ajudar alcançar estes ambiciosos objetivos. Neste contexto, encontra-se o uso de hidrogênio e de biocombustíveis em substituição a combustíveis fósseis. 
+
+Para exemplificar as etapas de uma ACV, vamos comparar, num primeiro momento, a produção e uso de etanol de cana de açúcar com a produção e uso da gasolina fóssil. Estes processos já estão consolidados em plantas industriais de larga escala e permitirão exemplificar grande parte dos aspectos da estimativa de pegada de carbono. A análise do ciclo de vida referente a produção e uso de hidrogênio, ainda em escala crescente no mundo, será explorada a seguir.       
+
+Conforme mencionado nos capítulos anteriores, a primeira etapa de uma ACV consiste na definição dos objetivos e as principais premissas da análise. Como objetivo, poderíamos tentar responder a seguinte pergunta: qual a redução de carbono esperada se substituirmos a gasolina fóssil pelo etanol de cana? Em outras palavras, qual a diferença entre a pegada de carbono da gasolina e do etanol? 
+
+No próximo passo, devemos definir a unidade de comparação dos produtos, ou seja, a unidade funcional. Esta definição é muito importante pois sinaliza o que está sendo comparado. Se a função de tais combustíveis é fornecer energia, seria conveniente compará-los por unidade de energia, isto é, as emissões de gases de efeito estufa, em CO~2e~, ao longo do ciclo de vida por GJ de combustível produzido e/ou utilizado num veículo. A unidade funcional poderia ser a massa ou o volume de produto obtido, mas a função “fornecimento de energia” não seria expressa adequadamente. Afinal, um quilograma de gasolina fornece aproximadamente 43 MJ energia, enquanto um quilograma de etanol, fornece 27 MJ (EPE, 2020). Este aspecto é ainda mais relevante em sistemas energéticos que produzem hidrogênio, cuja densidade energética é cerca de 120 MJ por quilograma de gás^[A densidade energética, neste caso, refere-se ao Poder Calorífico Inferior (PCI, Lower Heating Value, LHV) das substâncias comparadas aqui. O PCI de um material refere-se à quantidade de energia liberada na sua combustão, descontando a energia não recuperada pela condensação da água; ou seja, assumindo que a água se encontra na forma de vapor.], enquanto que combustíveis convencionais não ultrapassam 50 MJ por quilograma. Vale salientar que a unidade funcional é de livre escolha, porém ela deve sempre refletir o que se quer comparar, ou qual a função do produto analisado se pretende explorar.
+
+A definição das fronteiras do ciclo de vida também consiste numa premissa importante na análise. As fronteiras assumidas, muitas vezes, revelam impactos ambientais consideráveis que não são controlados diretamente pelo produtor e nem observados pelo consumidor. Porém, tais impactos existem pois aquele produto é produzido ou consumido. Considere por exemplo, se fossem consideradas apenas as emissões de CO~2~ na queima do combustível. Neste caso, o potencial de aquecimento global referente ao uso do etanol seria quase 100% menor em comparação com a gasolina. Afinal o CO~2~ emitido pela queima do etanol é biogênico, logo, considera-se que ele seria absorvido pela fotossíntese. Por sua vez, o CO~2~ emitido pela queima da gasolina estava armazenado por milhões de anos no subsolo e agora está sendo emitido para a atmosfera. Considere agora o uso de hidrogênio num motor de combustão interna. Certamente a emissão de carbono seria nula! Mas passe a considerar como este hidrogênio foi produzido, armazenado e transportado... Logo percebe-se que o potencial de aquecimento global daquele combustível, muitas vezes denominado de “zero carbono” está longe de ser zero. 
+
+No exemplo dado aqui, considere que o sistema analisado abrange desde a aquisição da matéria-prima, a conversão em combustível, transporte e uso. Vale reportar, nesta primeira etapa, que aspectos construtivos, como equipamentos e prédios não serão considerados no inventário.  
+
+Em termos metodológicos, a pegada de carbono será analisada a partir da metodologia do IPCC – AR5(IPCC, 2013), para 100 anos. 
+
+Na segunda etapa da ACV, segue a construção do inventário (vide Figura \@ref(fig:figura4)). Conforme mencionado, a qualidade dos resultados depende diretamente da qualidade do inventário. Para efeito de ilustração, os inventários foram simplificados. Vamos detalhar aqui apenas o sistema produtivo do etanol, considerando a etapa agrícola com valores típicos da região Centro-Sul do país e uma usina autônoma otimizada para a produção de etanol. Veja nas figuras os fluxos dos processos. 
+
+
+```{r figura4, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.align='center', fig.cap="Inventário e sistema-produto referente a produção de etanol de cana-de-açúcar."}
+
+knitr::include_graphics(path = 'figura_04.png')
+
+```
+
+Em termos proporcionais, na Figura \@ref(fig:figura5), apresenta-se o inventário para a produção de um GJ de etanol, incluindo também as etapas de transporte e uso. Assim, na perspectiva do ciclo de vida, a produção de 1,0 GJ de etanol, que equivale a aproximadamente 47 litros, demandaria o consumo de 8 gramas de pesticidas na produção agrícola da cana, ou 600 gramas de químicos, como ácido sulfúrico, no processo industrial do etanol.  
+
+```{r figura5, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.align='center', fig.cap="Inventário e sistema-produto referente a produção e uso de etanol de cana-de-açúcar."}
+
+knitr::include_graphics(path = 'figura_05.png')
+
+```
+
+Conforme definido anteriormente, vale salientar a diferença dos tipos de fluxos que são observados neste inventário. Os chamados fluxos elementares são aqueles provenientes diretamente do meio ambiente; como água e minerais; ou aqueles que são emitidos diretamente para o meio, como gases, poluentes, etc. Por sua vez os fluxos-produto são aqueles provenientes de outros processos. 
+
+Como está se avaliando a pegada de carbono do etanol, os fluxos elementares de interesse são apenas aqueles que possuem um potencial de aquecimento global. Os fluxos que não interferem na categoria de impacto analisada, são descartados. Por sua vez, os fluxos-produto são caracterizados por fatores específicos que representam o impacto ambiental associado ao ciclo de vida daquele produto. Isso permite que sejam considerados na análise, não apenas os impactos diretos verificados na cadeia-produtiva analisada, mas também os impactos indiretos associados aos produtos consumidos e as tecnologias acionadas. Aqui, pode-se chamar “fator específico” de “fator de emissão”, as emissões associadas a cada fluxo-produto. No exemplo citado, vê-se que o fator de emissão do nitrogênio é de 3,3, ou seja, de acordo com o processo acionado na base de dados selecionada (processo background), estima-se que cerca de 3,3 kg CO~2e~ seja emitido para a atmosfera por quilograma de fertilizante produzido. 
+
+A Figura \@ref(fig:figura6) seguinte apresenta como ficaria o ciclo de vida do etanol já transformando todos os fluxos reportados anteriormente em “CO~2e~”.
+
+```{r figura6, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.align='center', fig.cap="Inventário caracterizado referente a produção e uso de etanol de cana-de-açúcar."}
+
+knitr::include_graphics(path = 'figura_06.png')
+
+```
+
+Alguns pontos importantes merecem destaque:
+
+-	Fluxos elementares de CO~2~ biogênico, como na fermentação, não são considerados, por isso o valor “zero”. Por outro lado, a queima de bagaço e palha, ou seja, biomassa, apresentou um valor considerável de 2,3 kgCO~2e~. Isso se deu, pois na queima da biomassa outros gases com potencial estufa também podem ser gerados. 
+
+-	Ainda sobre a caracterização dos gases emitidos, salienta-se a relevância das emissões de N2O na etapa agrícola. Embora as emissões sejam pequenas (cerca de 25g), os eventuais impactos sobre o clima é elevado, resultando em cerca de 6,5 kg CO~2e~. Isso ocorre, devido ao elevado poder estufa deste gás ao ser emitido na atmosfera.
+
+-	No consumo de diesel, vale diferenciar as emissões em CO~2e~ associadas à produção do diesel e as emissões na queima do diesel no motor. Em geral, para combustíveis fósseis, a primeira categoria é menor que a segunda. 
+
+-	Atente que, neste exemplo, está se avaliando apenas o impacto sobre o clima. Se a análise fosse estendida para outras categorias de impacto, como toxicidade humana, o uso de pesticidas, por exemplo, poderia indicar impactos relevantes. 
+
+A Figura \@ref(fig:figura7) apresenta os resultados totais. 
+
+```{r figura7, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap="Avaliação de impactos da produção e uso de etanol de cana-de-açúcar sem alocação."}
+
+knitr::include_graphics(path = 'figura_07.png')
+
+```
+
+Ao todo, foram contabilizadas cerca de aproximadamente 20 kgCO~2e~ por GJ de etanol utilizado. A partir das premissas assumidas, este valor já é menor do que se contabilizou para a o ciclo de vida da gasolina, ou seja, 87.4 kgCO~2e~ por GJ^[A intensidade de carbono da gasolina baseia-se nos valores assumidos pela RenovaCalc, no contexto da política de baixo carbono RenovaBio no Brasil (ANP, 2020), vide seção \@ref(secao6).]. Indica-se assim que a substituição de um GJ de gasolina por etanol, cerca de 67,4 kgCO~2e~ deixariam de ser emitidos, resultando em uma redução de quase 80%.
+
+Porém, observa-se que o sistema produtivo do etanol produz também eletricidade. Seria justo que o etanol, que não é o único produto obtido, fosse responsabilizado por todas estas emissões? Se as emissões totais fossem alocadas para o etanol em base energética, a pegada de carbono do etanol seria cerca de 15 kgCO~2e~ por GJ (vide Figura \@ref(fig:figura8)). 
+
+```{r figura8, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap="Avaliação de impactos da produção e uso de etanol de cana-de-açúcar com alocação."}
+
+knitr::include_graphics(path = 'figura_08.png')
+
+```
+
+Ou seja, em termos energéticos, o sistema produz ao todo 1,35 GJ, sendo 1.0 GJ na forma de etanol e 0,35 GJ na forma de eletricidade (ou 96 kWh). Neste sentido pode-se dizer que o etanol é responsável por 74% da energia produzida. Assim, na ótica da alocação de carga ambiental, seria justo assumir que o etanol é responsável por 74% das emissões, resultando numa pegada de carbono de 15 kgCO~2e~ por GJ. O restante das emissões seria alocado à eletricidade, resultando em 14 kgCO~2e~ por GJ de eletricidade. Atente que para este último valor já estariam descontadas as emissões associadas ao transporte e uso de etanol. A alocação sempre é aplicada na carga ambiental anterior ao ponto de co-produção. Por sua vez, em base econômica, ou seja, considerando o valor de mercado de etanol e eletricidade, estima-se que cerca de 87% das emissões deveriam ser alocadas ao etanol, resultando numa pegada de carbono do etanol de 17 kgCO~2e~ por GJ. Outros parâmetros físicos poderiam, eventualmente ser usados para fazer a alocação. 
+
+Agora, afinal, como ficaria a pegada de carbono do etanol se adotássemos a abordagem de substituição? (Vide Figura \@ref(fig:figura9)).
+
+```{r figura9, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap="Avaliação de impactos da produção e uso de etanol de cana-de-açúcar assumindo substituição do co-produtos."}
+
+knitr::include_graphics(path = 'figura_09.png')
+
+```
+
+De forma geral, nesta abordagem, são contabilizados os possíveis créditos com os coprodutos. Ou seja, se, no processo produtivo, a eletricidade excedente está sendo inserida na rede elétrica, pode-se supor que a mesma quantia de eletricidade de algum outro processo está deixando produzida. Ou seja, emissões de carbono, eventualmente, estariam sendo evitadas. Suponha que cada MWh gerado por uma usina de açúcar e álcool evita a geração de 1 MWh de uma termelétrica a gás natural. Pela ACV da eletricidade obtida do gás natural, estima-se uma emissão de 540 kgCO~2e~ por MWh. Na abordagem de substituição, esta quantia de emissões estaria sendo evitada. No exemplo em tela, vê-se que 96 kWh de eletricidade está sendo produzida por GJ de etanol. Este montante de eletricidade evitaria a emissão de cerca de 52 kg de CO~2e~ por GJ de etanol produzido. Logo, a pegada de carbono do etanol nesta abordagem seria de -32 kgCO~2e~ por GJ de etanol produzido. Atente que nem sempre emissões são evitadas. Elas podem ser aumentadas. Mas estes aspectos, chamados de “consequenciais”, merecem uma atenção maior em outro momento.   
+
+Ainda na análise dos resultados, vale considerar qual a contribuição de cada uma das etapas do ciclo de vida para o resultado final. Supondo uma alocação energética, cerca de 70% das emissões vieram da parte agrícola e 15% da parte industrial. Na etapa agrícola, o consumo de fertilizantes nitrogenado foi responsável por mais de 30% das emissões. 
+
+Outras ferramentas são comumente utilizadas na análise dos resultados de uma ACV. Na análise de sensibilidade, tenta-se verificar qual a variação do resultado final em função da variação de um parâmetro do processo, como rendimento industrial, produtividade agrícola, se for o caso, distância de transporte, etc. Se o resultado final apresenta-se muito sensível a um parâmetro, é razoável levar este parâmetro em consideração quando foram propostas melhorias na análise ou no processo. 
+
+Por sua vez, na análise de incerteza, verifica-se o desvio padrão do resultado final considerando as incertezas dos dados que descrevem o processo. Geralmente esta análise é feita utilizando o método de Monte Carlo.  
+
+Um aspecto relevante e controverso para o indicador “pegada de carbono” numa perspectiva de ciclo de vida consiste na “Mudança do Uso da Terra” ou Land Use Change (LUC).  Mesmo a produção de hidrogênio, que dependa direta ou indiretamente da biomassa – como a gaseificação de madeira ou eletrólise a partir de plantas termelétricas à biomassa, respectivamente – pode apresentar variações relevantes nos valores estimados para pegada de carbono.   
+
+As mudanças no uso da terra para a obtenção da biomassa podem causar emissão de CO~2~ e decomposição de matéria orgânica do solo através do desmatamento; ou sequestro de CO~2~, devido à captura e armazenamento a longo prazo de CO~2~ atmosférico. 
+
+Quando se fala em LUC, a distinção entre LUC direto (dLUC) e LUC indireto (iLUC) é frequentemente usada, especialmente para fins de certificação. A ISO/TS 14067(ISO, 2018), por exemplo, define dLUC como uma mudança no uso ou manejo da terra dentro do sistema que está sendo avaliado, conforme indicado na Figura \@ref(fig:figura10). Em outras palavras, no dLUC são contabilizadas as emissões de carbono quando uma área, antes com uma certa forma de vegetação (florestas, pastagens, etc), é modificada pelo plantio da biomassa de interesse.  
+
+```{r figura10, echo=FALSE, message=FALSE, warning=FALSE, out.width="60%", fig.align='center', fig.cap="Mudança direta e indireta do uso da terra."}
+
+knitr::include_graphics(path = 'figura_10.png')
+
+```
+
+# O HIDROGÊNIO NAS POLÍTICAS DE BAIXO CARBONO {#secao6}
+
+# OUTRAS CATEGORIAS DE IMPACTO ALÉM DO CARBONO
+
+# CERTIFICAÇÕES DE HIDROGÊNIO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# FIGURAS
+
+Figura \@ref(fig:figura11)
+
+```{r figura11, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap=""}
+
+knitr::include_graphics(path = 'figura_11.png')
+
+```
+
+Figura \@ref(fig:figura12)
+
+```{r figura12, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap=""}
+
+knitr::include_graphics(path = 'figura_12.png')
+
+```
+
+Figura \@ref(fig:figura13)
+
+```{r figura13, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap=""}
+
+knitr::include_graphics(path = 'figura_13.png')
+
+```
+
+Figura \@ref(fig:figura14)
+
+```{r figura14, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap=""}
+
+knitr::include_graphics(path = 'figura_14.png')
+
+```
+
+Figura \@ref(fig:figura15)
+
+```{r figura15, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap=""}
+
+knitr::include_graphics(path = 'figura_15.png')
+
+```
+
+Figura \@ref(fig:figura16)
+
+```{r figura16, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap=""}
+
+knitr::include_graphics(path = 'figura_16.png')
+
+```
+
+Figura \@ref(fig:figura17)
+
+```{r figura17, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap=""}
+
+knitr::include_graphics(path = 'figura_17.png')
+
+```
+
+Figura \@ref(fig:figura18)
+
+```{r figura18, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%", fig.align='center', fig.cap=""}
+
+knitr::include_graphics(path = 'figura_18.png')
+
+```
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Na Tabela \@ref(tab:tabela1) 
+
+```{r tabela1, echo=FALSE, message=FALSE, warning=FALSE, tab.cap=""}
+library(magrittr, include.only = '%>%')
+library(gt)
+
+param_tec <- data.frame(
+  tipo_de_motor_primario = c('Motor de Combustão Interna',
+                             'Turbina a gás',
+                             'Motor Stirling',
+                             'FC tipo PEM',
+                             'Ciclo Orgânico Rankine (ORC)'),
+  combustivel = c('Gás Natural',
+                  'Gás Natural',
+                  'Biomassa',
+                  'H₂',
+                  'Calor residual'),
+  eficiencia = c('25 – 40',
+                 '25 – 35',
+                 '15 – 30',
+                 '45 – 60',
+                 '10 – 25'),
+  emissoes = c('Moderadas',
+               'Elevadas',
+               'Moderadas',
+               'Elevado vapor produzido',
+               'Baixas'),
+  tempo_de_partida = c('Moderado',
+                       'Moderado',
+                       'Alto',
+                       'Mínimo',
+                       'Muito alto'),
+  aplicacoes = c('Comerciais',
+                 'Longa escala',
+                 'Equipamentos CHP solares',
+                 'Tecnologias avançadas',
+                 'Recuperação de calor residual')
+)
+
+param_tec %>%
+  gt(caption = 'Características dos motores principais de sistemas de micro cogeração (m-CHP) para aplicações residenciais. Fonte: [6] [7] ') %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "#2e7d32"),
+      cell_text(color = "#e8f5e9", weight = "bold")
+    ),
+    locations = cells_column_labels()
+  ) %>%
+  cols_label(
+    tipo_de_motor_primario = 'Tipo de Motor Primário',
+    combustivel = 'Combustível',
+    eficiencia = 'Eficiência (%)',
+    emissoes = 'Emissões',
+    tempo_de_partida = 'Tempo de Partida',
+    aplicacoes = 'Aplicações'
+  ) %>%
+  cols_align(
+    align = "center",
+    columns = everything()
+  )
+```
+
+# REFERÊNCIAS {-}
+
+ABNT, 2009a. NBR ISO 14040 - Gestão ambiental – Avaliação do ciclo de vida – Princípios e estrutura. Associação Brasileira de Normas Técnicas, Rio de Janeiro.
+
+ABNT, 2009b. NBR ISO 14044 - Gestão ambiental - Avaliação do ciclo de vida - Requisitos e orientações. Associação Brasileira de Normas Técnicas, Rio de Janeiro.
+
+ANP, 2025. RenovaBio [WWW Document]. URL http://www.anp.gov.br/producao-de-biocombustiveis/renovabio (accessed 11.26.25).
+
+ANP, 2020. Renovacalc - v.6.1 [WWW Document]. National Agency of Petroleum Natural Gas and Biofuels - Renovabio. URL http://www.anp.gov.br/producao-de-biocombustiveis/renovabio/renovacalc (accessed 2.15.20).
+
+CCEE, 2025. Certificação de Hidrogênio - Brasil [WWW Document]. URL https://www.ccee.org.br/en/web/guest/certificacao_de_hidrogenio_brasil (accessed 11.26.25).
+
+Ecoinvent Association, 2019. Ecoinvent database. Version 3.6.
+
+EPA/RFS, 2025. Pending Petitions for Renewable Fuel Pathways [WWW Document]. URL https://www.epa.gov/renewable-fuel-standard/pending-petitions-renewable-fuel-pathways (accessed 11.26.25).
+
+EPE, 2020. Balanço Energético Nacional 2020 [WWW Document].
+
+European Hydrogen Observatory, 2025. Renewable Energy Directive [WWW Document].
+
+Guinée, J.B., Heijungs, R., Huppes, G., Zamagni, A., Masoni, P., Buonamici, R., Ekvall, T., Rydberg, T., 2011. Life Cycle Assessment: Past, Present, and Future. Environ. Sci. Technol. 45, 90–96. https://doi.org/10.1021/es101316v
+
+Huijbregts, M.A.J., Steinmann, Z.J.N., Elshout, P.M.F., Stam, G., Verones, F., Vieira, M.D.M., Hollander, A., Van Zelm, R., 2016. ReCiPe2016: A harmonized life cycle impact assessment method at midpoint and endpoint level. Bilthoven.
+
+ICAO, 2025. ICAO Document - CORSIA Sustainability Criteria for CORSIA Eligible Fuels - 4rd Edition. Montreal.
+
+IPCC, 2013. Climate Change 2013: The Physical Science Basis. Contribution of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change. Cambridge University Press, Cambridge.
+
+IRENA, 2023. Creating a global hydrogen market: Certification to enable trade. Abu Dhabi.
+
+ISO, 2018. ISO 14067:2018 - Greenhouse gases - Carbon footprint of products - Requirements and guidelines for quantification.
+
+Mehmeti, A., Angelis-Dimakis, A., Arampatzis, G., McPhail, S., Ulgiati, S., 2018. Life Cycle Assessment and Water Footprint of Hydrogen Production Methods: From Conventional to Emerging Technologies. Environments 5, 24. https://doi.org/10.3390/environments5020024
+
+Moreira, M., Gurgel, A.C., Seabra, J.E.A., 2014. Life Cycle Greenhouse Gas Emissions of Sugar Cane Renewable Jet Fuel. Environ. Sci. Technol. 48, 14756–14763. https://doi.org/10.1021/es503217g
+
+Morgan, E., 2025. The Colors of Hydrogen Production: Emissions, Costs, and Concerns.
+
+Spath, P.L., Mann, M.K., 2001. Life Cycle Assessment of Hydrogen Production via Natural Gas Steam Reforming - NREL/TP-570-27637. Golden, CO (United States).
